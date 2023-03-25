@@ -30,7 +30,7 @@ function App() {
   return (
       <div className='coin-app'>
       <div className='coin-search'>
-        <h2 className='coin-text'>Search Currency</h2>
+        <h2 className='coin-text'>Search Crypto Coin</h2>
         <form>
           <input
             className='coin-input'
@@ -40,7 +40,7 @@ function App() {
           />
         </form>
       </div>
-      {filteredCoins.map(coin => {
+      {coins.length === 0 ? <h1>loading...</h1> : filteredCoins.map(coin => {
         return (
           <Coin
             key={coin.id}
