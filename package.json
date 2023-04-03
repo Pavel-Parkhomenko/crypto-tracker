@@ -1,7 +1,8 @@
 {
   "name": "crypto-tracker",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
+  "private": false,
+  "homepage": "https://Pavel-Parkhomenko.github.io/crypto-tracker",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
