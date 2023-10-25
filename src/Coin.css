@@ -9,18 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
     border-bottom: 1px solid #d7d7d7;
-    width: 100%;
-}
-
-@media (min-width: 1200px) {
-    .coin-row {
-        width: 70%;
-    }
-    .coin-data {
-        width: 100%;
-    }
 }
 
 .coin {
@@ -46,7 +36,6 @@
 .coin-data {
     display: flex;
     text-align: right;
-    justify-content: space-around;
 }
 
 .red {
@@ -64,12 +53,28 @@
     justify-content: space-between;
 }
 
+.coin-price, .coin-volume {
+    margin: auto;
+}
+
 .coin-flex {
     display: flex;
     flex-direction: row;
 }
 
-@media (max-width: 568px) {
+
+.end-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.pre-end-box {
+    display: flex;
+    flex-direction: row;
+} 
+
+
+@media (max-width: 568px) { 
     .coin-data {
         display: flex;
         flex-direction: column;
@@ -84,7 +89,46 @@
     }
 
     .coin-row {
-        margin: 0 10px 0 10px;
-        height: 100px;
+        margin: 0 10px 10px 10px;
+        padding-bottom: 10px;
     }
+}
+
+@media (max-width: 1180px) { 
+    .coin-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        min-width: auto;
+    }
+
+    .coin-row {
+        margin: 0 10px 10px 10px;
+        padding-bottom: 10px;
+    }
+
+    .coin .w-all {
+        min-width: 150px;
+    }
+
+    .end-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+}
+
+@media (max-width: 812px) {
+    .pre-end-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+.w-all {
+    min-width: 200px;
+    /* min-width: 170px; */
+    /* width: 100%; */
 }
